@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RestAPITesting" thread-count="1">
+	<listeners>
+		<listener class-name="github.utils.ExtentReportListener"></listener>
+	</listeners>
+	<test thread-count="1" name="GitHubAPITesting" preserve-order="true">
+		<classes>
+			<class name="github.restapi.tests.CreateRepoAPITest" />
+			<class name="github.restapi.tests.GetSpecificUserRepoTest" />
+			<class name="github.restapi.tests.UpdateRepoAPITest" />
+			<class name="github.restapi.tests.FollowAUserAPITest" />
+			<class name="github.restapi.tests.DeleteGitHubRepoTest" />
+			<class name="github.restapi.tests.UnfollowUserAPITest" />
+
+		</classes>
+	</test>
+
+</suite>

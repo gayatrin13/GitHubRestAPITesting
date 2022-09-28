@@ -1,0 +1,212 @@
+<html>
+<head>
+<title>TestNG:  GitHubAPITesting</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>GitHubAPITesting</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>26/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Sep 26 10:10:49 PDT 2022</td>
+</tr>
+<tr><td>Total time:</td><td>41 seconds (41812 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='github.restapi.tests.UpdateRepoAPITest.testStatusLine()'><b>testStatusLine</b><br>Test class: github.restapi.tests.UpdateRepoAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.UpdateRepoAPITest@178213b</td></tr>
+<tr>
+<td title='github.restapi.tests.GetSpecificUserRepoTest.testHeaderEncoding()'><b>testHeaderEncoding</b><br>Test class: github.restapi.tests.GetSpecificUserRepoTest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.GetSpecificUserRepoTest@613a8ee1</td></tr>
+<tr>
+<td title='github.restapi.tests.CreateRepoAPITest.createRepoTest()'><b>createRepoTest</b><br>Test class: github.restapi.tests.CreateRepoAPITest<br>Parameters: Guru99DemoPOM, created selenium automation project using Page Object Model, http://github.com, false</td>
+<td></td>
+<td>1</td>
+<td>github.restapi.tests.CreateRepoAPITest@6b3e12b5</td></tr>
+<tr>
+<td title='github.restapi.tests.UpdateRepoAPITest.testHeaderServer()'><b>testHeaderServer</b><br>Test class: github.restapi.tests.UpdateRepoAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.UpdateRepoAPITest@178213b</td></tr>
+<tr>
+<td title='github.restapi.tests.FollowAUserAPITest.testStatusLine()'><b>testStatusLine</b><br>Test class: github.restapi.tests.FollowAUserAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.FollowAUserAPITest@7103cb56</td></tr>
+<tr>
+<td title='github.restapi.tests.CreateRepoAPITest.testHeaderContentType()'><b>testHeaderContentType</b><br>Test class: github.restapi.tests.CreateRepoAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.CreateRepoAPITest@6b3e12b5</td></tr>
+<tr>
+<td title='github.restapi.tests.UpdateRepoAPITest.testHeaderContentType()'><b>testHeaderContentType</b><br>Test class: github.restapi.tests.UpdateRepoAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.UpdateRepoAPITest@178213b</td></tr>
+<tr>
+<td title='github.restapi.tests.UpdateRepoAPITest.testStatusCode()'><b>testStatusCode</b><br>Test class: github.restapi.tests.UpdateRepoAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.UpdateRepoAPITest@178213b</td></tr>
+<tr>
+<td title='github.restapi.tests.UnfollowUserAPITest.testStatusLine()'><b>testStatusLine</b><br>Test class: github.restapi.tests.UnfollowUserAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.UnfollowUserAPITest@2e8e8225</td></tr>
+<tr>
+<td title='github.restapi.tests.UnfollowUserAPITest.testStatusCode()'><b>testStatusCode</b><br>Test class: github.restapi.tests.UnfollowUserAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.UnfollowUserAPITest@2e8e8225</td></tr>
+<tr>
+<td title='github.restapi.tests.GetSpecificUserRepoTest.testHeaderContentType()'><b>testHeaderContentType</b><br>Test class: github.restapi.tests.GetSpecificUserRepoTest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.GetSpecificUserRepoTest@613a8ee1</td></tr>
+<tr>
+<td title='github.restapi.tests.CreateRepoAPITest.createRepoTest()'><b>createRepoTest</b><br>Test class: github.restapi.tests.CreateRepoAPITest<br>Parameters: SeleniumBasicsProject, all selenium basics:locators,frames,popups, http://github.com, false</td>
+<td></td>
+<td>1</td>
+<td>github.restapi.tests.CreateRepoAPITest@6b3e12b5</td></tr>
+<tr>
+<td title='github.restapi.tests.CreateRepoAPITest.createRepoTest()'><b>createRepoTest</b><br>Test class: github.restapi.tests.CreateRepoAPITest<br>Parameters: RestAPIAutomationUsingHttpClients, Automated RestAPI using HttpClients, http://github.com, false</td>
+<td></td>
+<td>1</td>
+<td>github.restapi.tests.CreateRepoAPITest@6b3e12b5</td></tr>
+<tr>
+<td title='github.restapi.tests.GetSpecificUserRepoTest.testHeaderServer()'><b>testHeaderServer</b><br>Test class: github.restapi.tests.GetSpecificUserRepoTest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.GetSpecificUserRepoTest@613a8ee1</td></tr>
+<tr>
+<td title='github.restapi.tests.CreateRepoAPITest.testStatusCode()'><b>testStatusCode</b><br>Test class: github.restapi.tests.CreateRepoAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.CreateRepoAPITest@6b3e12b5</td></tr>
+<tr>
+<td title='github.restapi.tests.DeleteGitHubRepoTest.testStatusCode()'><b>testStatusCode</b><br>Test class: github.restapi.tests.DeleteGitHubRepoTest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.DeleteGitHubRepoTest@1b765a2c</td></tr>
+<tr>
+<td title='github.restapi.tests.CreateRepoAPITest.testHeaderServer()'><b>testHeaderServer</b><br>Test class: github.restapi.tests.CreateRepoAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.CreateRepoAPITest@6b3e12b5</td></tr>
+<tr>
+<td title='github.restapi.tests.UnfollowUserAPITest.testHeaderServer()'><b>testHeaderServer</b><br>Test class: github.restapi.tests.UnfollowUserAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.UnfollowUserAPITest@2e8e8225</td></tr>
+<tr>
+<td title='github.restapi.tests.UpdateRepoAPITest.testHeaderEncoding()'><b>testHeaderEncoding</b><br>Test class: github.restapi.tests.UpdateRepoAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.UpdateRepoAPITest@178213b</td></tr>
+<tr>
+<td title='github.restapi.tests.GetSpecificUserRepoTest.testStatusLine()'><b>testStatusLine</b><br>Test class: github.restapi.tests.GetSpecificUserRepoTest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.GetSpecificUserRepoTest@613a8ee1</td></tr>
+<tr>
+<td title='github.restapi.tests.FollowAUserAPITest.testStatusCode()'><b>testStatusCode</b><br>Test class: github.restapi.tests.FollowAUserAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.FollowAUserAPITest@7103cb56</td></tr>
+<tr>
+<td title='github.restapi.tests.CreateRepoAPITest.createRepoTest()'><b>createRepoTest</b><br>Test class: github.restapi.tests.CreateRepoAPITest<br>Parameters: TestNGProject, covers all TestNG basics:annotations,data providers,extent reports,listeners, http://github.com, false</td>
+<td></td>
+<td>1</td>
+<td>github.restapi.tests.CreateRepoAPITest@6b3e12b5</td></tr>
+<tr>
+<td title='github.restapi.tests.CreateRepoAPITest.testStatusLine()'><b>testStatusLine</b><br>Test class: github.restapi.tests.CreateRepoAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.CreateRepoAPITest@6b3e12b5</td></tr>
+<tr>
+<td title='github.restapi.tests.CreateRepoAPITest.createRepoTest()'><b>createRepoTest</b><br>Test class: github.restapi.tests.CreateRepoAPITest<br>Parameters:  GitHubHandling_UsingRestAssured, creating,updating,deleting Repos.
+Follow or unfollow a user.
+List repositories,notifications, http://github.com, false</td>
+<td></td>
+<td>1</td>
+<td>github.restapi.tests.CreateRepoAPITest@6b3e12b5</td></tr>
+<tr>
+<td title='github.restapi.tests.FollowAUserAPITest.testHeaderServer()'><b>testHeaderServer</b><br>Test class: github.restapi.tests.FollowAUserAPITest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.FollowAUserAPITest@7103cb56</td></tr>
+<tr>
+<td title='github.restapi.tests.GetSpecificUserRepoTest.testStatusCode()'><b>testStatusCode</b><br>Test class: github.restapi.tests.GetSpecificUserRepoTest</td>
+<td></td>
+<td>0</td>
+<td>github.restapi.tests.GetSpecificUserRepoTest@613a8ee1</td></tr>
+</table><p>
+</body>
+</html>
