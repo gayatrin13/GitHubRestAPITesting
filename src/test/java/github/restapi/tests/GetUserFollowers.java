@@ -16,6 +16,7 @@ public class GetUserFollowers extends TestBase {
 	public void getAllFollwers() {
 
 		response = RestAssured.given().auth().oauth2(oauthToken).get("/users/gayatrin13/followers");
+		System.out.println("getAllFollwers:" + response.asPrettyString());
 	}
 
 	@Test
