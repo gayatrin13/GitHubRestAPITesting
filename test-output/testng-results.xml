@@ -1,287 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="26" passed="26" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-26T10:10:49 PDT" name="RestAPITesting" finished-at="2022-09-26T10:11:31 PDT" duration-ms="41812">
+  <suite started-at="2022-09-28T17:54:22 PDT" name="Default suite" finished-at="2022-09-28T17:54:28 PDT" duration-ms="6441">
     <groups>
     </groups>
-    <test started-at="2022-09-26T10:10:49 PDT" name="GitHubAPITesting" finished-at="2022-09-26T10:11:31 PDT" duration-ms="41812">
-      <class name="github.restapi.tests.FollowAUserAPITest">
-        <test-method is-config="true" signature="followSpecificUserTest()[pri:0, instance:github.restapi.tests.FollowAUserAPITest@7103cb56]" started-at="2022-09-26T10:11:13 PDT" name="followSpecificUserTest" finished-at="2022-09-26T10:11:13 PDT" duration-ms="561" status="PASS">
+    <test started-at="2022-09-28T17:54:22 PDT" name="Default test" finished-at="2022-09-28T17:54:28 PDT" duration-ms="6441">
+      <class name="github.restapi.tests.GetUserFollowers">
+        <test-method is-config="true" signature="getAllFollwers()[pri:0, instance:github.restapi.tests.GetUserFollowers@6d1ef78d]" started-at="2022-09-28T17:54:22 PDT" name="getAllFollwers" finished-at="2022-09-28T17:54:23 PDT" duration-ms="1387" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- followSpecificUserTest -->
-        <test-method signature="testHeaderServer()[pri:0, instance:github.restapi.tests.FollowAUserAPITest@7103cb56]" started-at="2022-09-26T10:11:13 PDT" name="testHeaderServer" finished-at="2022-09-26T10:11:13 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHeaderServer -->
-        <test-method signature="testStatusCode()[pri:0, instance:github.restapi.tests.FollowAUserAPITest@7103cb56]" started-at="2022-09-26T10:11:13 PDT" name="testStatusCode" finished-at="2022-09-26T10:11:13 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStatusCode -->
-        <test-method signature="testStatusLine()[pri:0, instance:github.restapi.tests.FollowAUserAPITest@7103cb56]" started-at="2022-09-26T10:11:13 PDT" name="testStatusLine" finished-at="2022-09-26T10:11:13 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStatusLine -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:github.restapi.tests.FollowAUserAPITest@7103cb56]" started-at="2022-09-26T10:11:13 PDT" name="cleanUp" finished-at="2022-09-26T10:11:18 PDT" duration-ms="5010" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- github.restapi.tests.FollowAUserAPITest -->
-      <class name="github.restapi.tests.DeleteGitHubRepoTest">
-        <test-method is-config="true" signature="deleteRepository()[pri:0, instance:github.restapi.tests.DeleteGitHubRepoTest@1b765a2c]" started-at="2022-09-26T10:11:18 PDT" name="deleteRepository" finished-at="2022-09-26T10:11:20 PDT" duration-ms="2049" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteRepository -->
-        <test-method signature="testStatusCode()[pri:0, instance:github.restapi.tests.DeleteGitHubRepoTest@1b765a2c]" started-at="2022-09-26T10:11:20 PDT" name="testStatusCode" finished-at="2022-09-26T10:11:20 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStatusCode -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:github.restapi.tests.DeleteGitHubRepoTest@1b765a2c]" started-at="2022-09-26T10:11:20 PDT" name="cleanUp" finished-at="2022-09-26T10:11:25 PDT" duration-ms="5005" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- github.restapi.tests.DeleteGitHubRepoTest -->
-      <class name="github.restapi.tests.CreateRepoAPITest">
-        <test-method is-config="true" signature="ssetUP()[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:49 PDT" name="ssetUP" finished-at="2022-09-26T10:10:49 PDT" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ssetUP -->
-        <test-method signature="createRepoTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:50 PDT" name="createRepoTest" data-provider="GitHubRepoData" finished-at="2022-09-26T10:10:51 PDT" duration-ms="1820" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[ GitHubHandling_UsingRestAssured]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[creating,updating,deleting Repos.
-Follow or unfollow a user.
-List repositories,notifications]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[http://github.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createRepoTest -->
-        <test-method signature="createRepoTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:51 PDT" name="createRepoTest" data-provider="GitHubRepoData" finished-at="2022-09-26T10:10:53 PDT" duration-ms="1457" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Guru99DemoPOM]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[created selenium automation project using Page Object Model]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[http://github.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createRepoTest -->
-        <test-method signature="createRepoTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:53 PDT" name="createRepoTest" data-provider="GitHubRepoData" finished-at="2022-09-26T10:10:54 PDT" duration-ms="1337" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[RestAPIAutomationUsingHttpClients]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Automated RestAPI using HttpClients]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[http://github.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createRepoTest -->
-        <test-method signature="createRepoTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:54 PDT" name="createRepoTest" data-provider="GitHubRepoData" finished-at="2022-09-26T10:10:56 PDT" duration-ms="1283" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[SeleniumBasicsProject]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[all selenium basics:locators,frames,popups]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[http://github.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createRepoTest -->
-        <test-method signature="createRepoTest(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:56 PDT" name="createRepoTest" data-provider="GitHubRepoData" finished-at="2022-09-26T10:10:57 PDT" duration-ms="1237" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[TestNGProject]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[covers all TestNG basics:annotations,data providers,extent reports,listeners]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[http://github.com]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[false]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createRepoTest -->
-        <test-method signature="testHeaderContentType()[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:57 PDT" name="testHeaderContentType" finished-at="2022-09-26T10:10:57 PDT" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHeaderContentType -->
-        <test-method signature="testHeaderServer()[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:57 PDT" name="testHeaderServer" finished-at="2022-09-26T10:10:57 PDT" duration-ms="1" status="PASS">
+        </test-method> <!-- getAllFollwers -->
+        <test-method signature="testHeaderServer()[pri:0, instance:github.restapi.tests.GetUserFollowers@6d1ef78d]" started-at="2022-09-28T17:54:23 PDT" name="testHeaderServer" finished-at="2022-09-28T17:54:23 PDT" duration-ms="6" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHeaderServer -->
-        <test-method signature="testStatusCode()[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:57 PDT" name="testStatusCode" finished-at="2022-09-26T10:10:57 PDT" duration-ms="1" status="PASS">
+        <test-method signature="testStatusCode()[pri:0, instance:github.restapi.tests.GetUserFollowers@6d1ef78d]" started-at="2022-09-28T17:54:23 PDT" name="testStatusCode" finished-at="2022-09-28T17:54:23 PDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStatusCode -->
-        <test-method signature="testStatusLine()[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:57 PDT" name="testStatusLine" finished-at="2022-09-26T10:10:57 PDT" duration-ms="1" status="PASS">
+        <test-method signature="testStatusLine()[pri:0, instance:github.restapi.tests.GetUserFollowers@6d1ef78d]" started-at="2022-09-28T17:54:23 PDT" name="testStatusLine" finished-at="2022-09-28T17:54:23 PDT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testStatusLine -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:github.restapi.tests.CreateRepoAPITest@6b3e12b5]" started-at="2022-09-26T10:10:57 PDT" name="cleanUp" finished-at="2022-09-26T10:11:02 PDT" duration-ms="5014" status="PASS">
+        <test-method is-config="true" signature="cleanUp()[pri:0, instance:github.restapi.tests.GetUserFollowers@6d1ef78d]" started-at="2022-09-28T17:54:23 PDT" name="cleanUp" finished-at="2022-09-28T17:54:28 PDT" duration-ms="5013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanUp -->
-      </class> <!-- github.restapi.tests.CreateRepoAPITest -->
-      <class name="github.restapi.tests.UpdateRepoAPITest">
-        <test-method is-config="true" signature="upadateRepoTest()[pri:0, instance:github.restapi.tests.UpdateRepoAPITest@178213b]" started-at="2022-09-26T10:11:07 PDT" name="upadateRepoTest" finished-at="2022-09-26T10:11:08 PDT" duration-ms="374" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- upadateRepoTest -->
-        <test-method signature="testHeaderContentType()[pri:0, instance:github.restapi.tests.UpdateRepoAPITest@178213b]" started-at="2022-09-26T10:11:08 PDT" name="testHeaderContentType" finished-at="2022-09-26T10:11:08 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHeaderContentType -->
-        <test-method signature="testHeaderEncoding()[pri:0, instance:github.restapi.tests.UpdateRepoAPITest@178213b]" started-at="2022-09-26T10:11:08 PDT" name="testHeaderEncoding" finished-at="2022-09-26T10:11:08 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHeaderEncoding -->
-        <test-method signature="testHeaderServer()[pri:0, instance:github.restapi.tests.UpdateRepoAPITest@178213b]" started-at="2022-09-26T10:11:08 PDT" name="testHeaderServer" finished-at="2022-09-26T10:11:08 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHeaderServer -->
-        <test-method signature="testStatusCode()[pri:0, instance:github.restapi.tests.UpdateRepoAPITest@178213b]" started-at="2022-09-26T10:11:08 PDT" name="testStatusCode" finished-at="2022-09-26T10:11:08 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStatusCode -->
-        <test-method signature="testStatusLine()[pri:0, instance:github.restapi.tests.UpdateRepoAPITest@178213b]" started-at="2022-09-26T10:11:08 PDT" name="testStatusLine" finished-at="2022-09-26T10:11:08 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStatusLine -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:github.restapi.tests.UpdateRepoAPITest@178213b]" started-at="2022-09-26T10:11:08 PDT" name="cleanUp" finished-at="2022-09-26T10:11:13 PDT" duration-ms="5008" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- github.restapi.tests.UpdateRepoAPITest -->
-      <class name="github.restapi.tests.UnfollowUserAPITest">
-        <test-method is-config="true" signature="unfollowAUser()[pri:0, instance:github.restapi.tests.UnfollowUserAPITest@2e8e8225]" started-at="2022-09-26T10:11:25 PDT" name="unfollowAUser" finished-at="2022-09-26T10:11:26 PDT" duration-ms="334" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- unfollowAUser -->
-        <test-method signature="testHeaderServer()[pri:0, instance:github.restapi.tests.UnfollowUserAPITest@2e8e8225]" started-at="2022-09-26T10:11:26 PDT" name="testHeaderServer" finished-at="2022-09-26T10:11:26 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHeaderServer -->
-        <test-method signature="testStatusCode()[pri:0, instance:github.restapi.tests.UnfollowUserAPITest@2e8e8225]" started-at="2022-09-26T10:11:26 PDT" name="testStatusCode" finished-at="2022-09-26T10:11:26 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStatusCode -->
-        <test-method signature="testStatusLine()[pri:0, instance:github.restapi.tests.UnfollowUserAPITest@2e8e8225]" started-at="2022-09-26T10:11:26 PDT" name="testStatusLine" finished-at="2022-09-26T10:11:26 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStatusLine -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:github.restapi.tests.UnfollowUserAPITest@2e8e8225]" started-at="2022-09-26T10:11:26 PDT" name="cleanUp" finished-at="2022-09-26T10:11:31 PDT" duration-ms="5015" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- github.restapi.tests.UnfollowUserAPITest -->
-      <class name="github.restapi.tests.GetSpecificUserRepoTest">
-        <test-method is-config="true" signature="getSpecificUserRepoAPI()[pri:0, instance:github.restapi.tests.GetSpecificUserRepoTest@613a8ee1]" started-at="2022-09-26T10:11:02 PDT" name="getSpecificUserRepoAPI" finished-at="2022-09-26T10:11:02 PDT" duration-ms="300" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSpecificUserRepoAPI -->
-        <test-method signature="testHeaderContentType()[pri:0, instance:github.restapi.tests.GetSpecificUserRepoTest@613a8ee1]" started-at="2022-09-26T10:11:02 PDT" name="testHeaderContentType" finished-at="2022-09-26T10:11:02 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHeaderContentType -->
-        <test-method signature="testHeaderEncoding()[pri:0, instance:github.restapi.tests.GetSpecificUserRepoTest@613a8ee1]" started-at="2022-09-26T10:11:02 PDT" name="testHeaderEncoding" finished-at="2022-09-26T10:11:02 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHeaderEncoding -->
-        <test-method signature="testHeaderServer()[pri:0, instance:github.restapi.tests.GetSpecificUserRepoTest@613a8ee1]" started-at="2022-09-26T10:11:02 PDT" name="testHeaderServer" finished-at="2022-09-26T10:11:02 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testHeaderServer -->
-        <test-method signature="testStatusCode()[pri:0, instance:github.restapi.tests.GetSpecificUserRepoTest@613a8ee1]" started-at="2022-09-26T10:11:02 PDT" name="testStatusCode" finished-at="2022-09-26T10:11:02 PDT" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStatusCode -->
-        <test-method signature="testStatusLine()[pri:0, instance:github.restapi.tests.GetSpecificUserRepoTest@613a8ee1]" started-at="2022-09-26T10:11:02 PDT" name="testStatusLine" finished-at="2022-09-26T10:11:02 PDT" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testStatusLine -->
-        <test-method is-config="true" signature="cleanUp()[pri:0, instance:github.restapi.tests.GetSpecificUserRepoTest@613a8ee1]" started-at="2022-09-26T10:11:02 PDT" name="cleanUp" finished-at="2022-09-26T10:11:07 PDT" duration-ms="5013" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanUp -->
-      </class> <!-- github.restapi.tests.GetSpecificUserRepoTest -->
-    </test> <!-- GitHubAPITesting -->
-  </suite> <!-- RestAPITesting -->
+      </class> <!-- github.restapi.tests.GetUserFollowers -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
