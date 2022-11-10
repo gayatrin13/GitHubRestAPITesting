@@ -3,6 +3,7 @@ D:\Gayatri\eclipse workspace\GitHubRestAPIUsingRestAssured\src\test\java\github\
 D:\Gayatri\eclipse workspace\GitHubRestAPIUsingRestAssured\src\test\java\github\restapi\testbase\TestBase.java
 D:\Gayatri\eclipse workspace\GitHubRestAPIUsingRestAssured\src\test\java\github\utils\ExcelDataReader.java
 D:\Gayatri\eclipse workspace\GitHubRestAPIUsingRestAssured\src\test\java\github\restapi\tests\FollowAUserAPITest.java
+D:\Gayatri\eclipse workspace\GitHubRestAPIUsingRestAssured\src\test\java\github\restapi\tests\GetUserFollowers.java
 D:\Gayatri\eclipse workspace\GitHubRestAPIUsingRestAssured\src\test\java\github\restapi\tests\UnfollowUserAPITest.java
 D:\Gayatri\eclipse workspace\GitHubRestAPIUsingRestAssured\src\test\java\github\restapi\tests\GetSpecificUserRepoTest.java
 D:\Gayatri\eclipse workspace\GitHubRestAPIUsingRestAssured\src\test\java\github\restapi\tests\DeleteGitHubRepoTest.java
