@@ -39,7 +39,7 @@ function Replace-Placeholders([String] $fileText) {
 
 # Read config.properties file content.
 Write-Host "Reading config file -> $configFile ..."
-[String] $configFile = [System.IO.Path]::Combine($workspaceDir, "", "\src\test\java\github\config\config.properties")
+[String] $configFile = [System.IO.Path]::Combine($workspaceDir, "src\test\java\github\config\", "config.properties")
 $utf8Enc = [System.Text.UTF8Encoding]::new($false, $true)
 $fileContent = [System.IO.File]::ReadAllText($configFile, $utf8Enc)
 
