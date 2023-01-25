@@ -1,2 +1,2 @@
-cd D:\Gayatri\eclipse workspace\GitHubRestAPIUsingRestAssured
+cd D:\eclipse_workspaces\AutomationWorkspace\GitHubRestAPIUsingRestAssured
 mvn clean install
