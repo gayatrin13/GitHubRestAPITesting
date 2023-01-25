@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import github.restapi.testbase.TestBase;
+import github.utils.ExcelDataReader;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
@@ -15,14 +16,22 @@ public class DeleteGitHubRepoTest extends TestBase {
 	@BeforeClass
 	public void deleteRepository() { // RestAPIAutomationUsingHttpClients //SeleniumBasicsProject //Guru99DemoPOM
 										// //TestNGProject
-		System.out.println("******************************DeleteGitHubRepoTest*********************************************");
+		String filePath = props.getProperty("github_data_filepath");
+		String sheetname = props.getProperty("sheet_name");
+		String[][] data = ExcelDataReader.getCellData(filePath, sheetname);
 
-		String[] repo_names = { "RestAPIAutomationUsingHttpClients", "SeleniumBasicsProject", "Guru99DemoPOM",
-				"TestNGProject" };
+		for (int i = 0; i < data.length; i++) {
+			System.out.println("RepoName: " + data[i][0]);
+		}
+		System.out.println(
+				"******************************DeleteGitHubRepoTest*********************************************");
+
+		String[] repo_names = { "GitHubSampleRepo1", "GitHubSampleRepo2", "GitHubSampleRepo3", "GitHubSampleRepo4",
+				"GitHubSampleRepo5" };
 		for (int i = 0; i < repo_names.length; i++) {
 			response = RestAssured.given().auth().oauth2(oauthToken).delete("/repos/gayatrin13/" + repo_names[i]);
 			System.out.println("Status Code :" + response.getStatusCode());
-		//	System.out.println("response :" + response.asPrettyString());
+			// System.out.println("response :" + response.asPrettyString());
 		}
 
 	}
