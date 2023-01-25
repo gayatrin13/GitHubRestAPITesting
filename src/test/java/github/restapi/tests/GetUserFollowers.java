@@ -15,7 +15,7 @@ public class GetUserFollowers extends TestBase {
 	@BeforeClass
 	public void getAllFollwers() {
 
-		response = RestAssured.given().auth().oauth2(oauthToken).get("/users/gayatrin13/followers");
+		response = RestAssured.given().auth().oauth2(oauthToken).get(props.getProperty("get_user_follower_uri"));
 		System.out.println("getAllFollwers:" + response.asPrettyString());
 	}
 

@@ -18,8 +18,9 @@ public class UpdateRepoAPITest extends TestBase {
 		System.out.println(
 				"****************************UpdateRepoAPITest***********************************************");
 		JSONObject object = new JSONObject();
-		object.put("description", "First GitHub Repo using Rest Assured/RestAPI");
-		response = RestAssured.given().body(object).auth().oauth2(oauthToken).patch("/repos/gayatrin13/Hello-World");
+		object.put("description", "First GitHub Repo");
+		response = RestAssured.given().body(object).auth().oauth2(oauthToken)
+				.patch(props.getProperty("update_repo_uri"));
 		System.out.println("status code: " + response.getStatusCode());
 		// System.out.println("response :" + response.asPrettyString());
 

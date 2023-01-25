@@ -19,7 +19,7 @@ public class GetSpecificUserRepoTest extends TestBase {
 	public void getSpecificUserRepoAPI() {
 		System.out.println(
 				"****************************GetSpecificUserRepoTest***********************************************");
-		response = RestAssured.given().get("users/gayatrin13/repos");
+		response = RestAssured.given().get(props.getProperty("get_specific_user_repo"));
 		System.out.println("Status code: " + response.getStatusCode());
 		// System.out.println("getSpecificUserRepoAPITest response :" +
 		// response.asPrettyString());

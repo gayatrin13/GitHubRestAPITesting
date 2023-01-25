@@ -20,16 +20,16 @@ public class DeleteGitHubRepoTest extends TestBase {
 		String sheetname = props.getProperty("sheet_name");
 		String[][] data = ExcelDataReader.getCellData(filePath, sheetname);
 
-		for (int i = 0; i < data.length; i++) {
-			System.out.println("RepoName: " + data[i][0]);
-		}
 		System.out.println(
 				"******************************DeleteGitHubRepoTest*********************************************");
 
-		String[] repo_names = { "GitHubSampleRepo1", "GitHubSampleRepo2", "GitHubSampleRepo3", "GitHubSampleRepo4",
-				"GitHubSampleRepo5" };
-		for (int i = 0; i < repo_names.length; i++) {
-			response = RestAssured.given().auth().oauth2(oauthToken).delete("/repos/gayatrin13/" + repo_names[i]);
+//		String[] repo_names = { "GitHubSampleRepo1", "GitHubSampleRepo2", "GitHubSampleRepo3", "GitHubSampleRepo4",
+//				"GitHubSampleRepo5" };
+//		for (int i = 0; i < repo_names.length; i++) {
+		for (int i = 0; i < data.length; i++) {
+			System.out.println("RepoName: " + data[i][0]);
+			response = RestAssured.given().auth().oauth2(oauthToken)
+					.delete(props.getProperty("delete_repo_uri") + data[i][0]);
 			System.out.println("Status Code :" + response.getStatusCode());
 			// System.out.println("response :" + response.asPrettyString());
 		}

@@ -14,11 +14,12 @@ public class FollowAUserAPITest extends TestBase {
 
 	@BeforeClass
 	public void followSpecificUserTest() { // follow a specific user
-		System.out.println("*************************FollowAUserAPITest**************************************************");
+		System.out.println(
+				"*************************FollowAUserAPITest**************************************************");
 		response = RestAssured.given()/* .header("Content Length", "0") */.auth().oauth2(oauthToken)
-				.put("/user/following/npatilcsod");
+				.put(props.getProperty("follow_user_uri"));
 		System.out.println("status code :" + response.getStatusCode());
-	//	System.out.println("followSpecificUserTest :" + response.asPrettyString());
+		// System.out.println("followSpecificUserTest :" + response.asPrettyString());
 
 	}
 

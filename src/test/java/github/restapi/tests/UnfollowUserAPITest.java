@@ -16,7 +16,7 @@ public class UnfollowUserAPITest extends TestBase {
 	public void unfollowAUser() {
 		System.out.println(
 				"****************************UnfollowUserAPITest***********************************************");
-		response = RestAssured.given().auth().oauth2(oauthToken).delete("/user/following/npatilcsod");
+		response = RestAssured.given().auth().oauth2(oauthToken).delete(props.getProperty("unfollow_user_uri"));
 		// System.out.println("response :" + response.asPrettyString());
 		System.out.println("status code :" + response.getStatusCode());
 	}
