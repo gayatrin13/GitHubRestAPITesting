@@ -31,7 +31,8 @@ public class CreateRepoAPITest extends TestBase {
 		object.put("description", description);
 		object.put("homepage", homepage);
 		object.put("private", privateVal);
-		response = RestAssured.given().body(object).auth().oauth2(oauthToken).post(props.getProperty("create_repo_uri"));
+		response = RestAssured.given().body(object).auth().oauth2(oauthToken)
+				.post(props.getProperty("create_repo_uri"));
 		// System.out.println("createRepoTest response :" + response.asString());
 		System.out.println("status code :" + response.getStatusCode());
 
@@ -39,7 +40,6 @@ public class CreateRepoAPITest extends TestBase {
 
 	@DataProvider(name = "GitHubRepoData")
 	public String[][] getExcelData() {
-
 		String[][] data = ExcelDataReader.getCellData(filePath, sheetname);
 		return data;
 	}
